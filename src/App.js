@@ -1,10 +1,13 @@
+import { Routes, Route } from "react-router-dom";
 import NotFound from "./challengeOne/NotFound";
+import MyTeam from "./challengeTwo/MyTeam";
 
 function App() {
 	return (
-		<div>
-			<NotFound />
-		</div>
+		<Routes>
+			<Route path="/" exact element={<NotFound />} />
+			<Route path="/my-team" exact element={<MyTeam />} />
+		</Routes>
 	);
 }
 
