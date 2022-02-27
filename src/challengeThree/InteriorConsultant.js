@@ -44,6 +44,7 @@ const NavItem = styled.p`
 	font-size: 1.25rem;
 	font-weight: 500;
 	padding: 0.5rem 1rem;
+	margin-left: 5.3rem;
 	${(props) =>
 		props?.active &&
 		`border-bottom: 2px solid ${colors.white}; font-weight: 700`};
