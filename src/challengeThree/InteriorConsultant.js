@@ -10,12 +10,19 @@ const Container = styled.div`
 	margin: 0;
 	min-height: 100vh;
 	position: relative;
+	@media only screen and (max-width: 400px) {
+		width: 100%;
+		height: 100%;
+	}
 `;
 const Nav = styled.div`
 	display: flex;
 	justify-content: space-between;
 	padding: 2.5rem 5rem;
 	align-items: center;
+	@media only screen and (max-width: 400px) {
+		padding: 1rem;
+	}
 `;
 const Logo = styled.p`
 	font-size: 0.875rem;
@@ -28,6 +35,9 @@ const Logo = styled.p`
 const NavItemConatiner = styled.div`
 	display: flex;
 	align-items: center;
+	@media only screen and (max-width: 400px) {
+		display: none;
+	}
 `;
 const NavItem = styled.p`
 	font-family: "Montserrat", sans-serif;
@@ -41,16 +51,27 @@ const NavItem = styled.p`
 const Content = styled.div`
 	display: flex;
 	padding: 0 5rem;
+	@media only screen and (max-width: 400px) {
+		flex-direction: column;
+		padding: 0 1rem 9rem 1rem;
+	}
 `;
 const Company = styled.div`
 	align-items: center;
 	width: 50%;
+	@media only screen and (max-width: 400px) {
+		width: 100%;
+	}
 `;
 const CompanyName = styled.p`
 	font-family: "Lora", serif;
 	font-size: 3rem;
 	font-weight: 500;
 	margin-top: 1rem;
+	@media only screen and (max-width: 400px) {
+		font-size: 2.25rem;
+		margin-bottom: 0;
+	}
 `;
 const CompanyTagline = styled.p`
 	font-family: "Montserrat", serif;
@@ -59,6 +80,11 @@ const CompanyTagline = styled.p`
 	font-weight: 400;
 	text-align: left;
 	margin-top: 2.5rem;
+	@media only screen and (max-width: 400px) {
+		font-size: 0.875rem;
+		margin-top: 1.5rem;
+		margin-bottom: 0;
+	}
 `;
 const Cta = styled.button`
 	background-color: ${colors.black};
@@ -68,10 +94,18 @@ const Cta = styled.button`
 	border: none;
 	font-size: 1.125rem;
 	margin-top: 3rem;
+	@media only screen and (max-width: 400px) {
+		font-size: 0.875rem;
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
 `;
 const ImageContainer = styled.div`
 	position: relative;
 	width: 50%;
+	@media only screen and (max-width: 400px) {
+		width: 100%;
+	}
 `;
 const Image = styled.img`
 	width: 100%;
@@ -88,6 +122,12 @@ const Card = styled.div`
 		border-radius: 50%;
 		max-width: 100%;
 		max-height: 100%;
+	}
+	@media only screen and (max-width: 400px) {
+		min-width: unset;
+		max-width: 250px;
+		top: 13rem;
+		right: 1rem;
 	}
 `;
 const ProfileImageContainer = styled.div`
@@ -121,6 +161,9 @@ const StyledP = styled.p`
 	font-weight: 700;
 	width: 75%;
 	margin: 0;
+	@media only screen and (max-width: 400px) {
+		font-size: 1.125rem;
+	}
 `;
 const Footer = styled.p`
 	font-family: "Montserrat", sans-serif;
