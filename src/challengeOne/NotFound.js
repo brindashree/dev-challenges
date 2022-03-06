@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { colors } from "../themes/styles";
 import scarecrow from "../images/Scarecrow.png";
+import Nav from "../Nav/Nav";
 
 const MainContainer = styled.div`
 	background-color: ${colors.white};
@@ -85,6 +86,7 @@ const CTA = styled.button`
 const NotFound = () => {
 	return (
 		<MainContainer>
+			<Nav />
 			<TopNav>
 				<StyledLogo>404 Not Found</StyledLogo>
 				<MainBody>

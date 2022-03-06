@@ -5,6 +5,7 @@ import photoThree from "../images/photo3.png";
 import photoFour from "../images/photo4.png";
 import photoFive from "../images/photo5.png";
 import photoSix from "../images/photo6.png";
+import Nav from "../Nav/Nav";
 import { colors } from "../themes/styles";
 
 const Container = styled.div`
@@ -149,24 +150,27 @@ const MyTeam = () => {
 		);
 	};
 	return (
-		<Container>
-			<HeroContainer>
-				<div>
-					<Title>The creative crew</Title>
-				</div>
-				<div>
-					<TagLine>Who we are</TagLine>
-					<Content>
-						We are team of creatively diverse. driven. innovative individuals
-						working in various locations from the world.
-					</Content>
-				</div>
-			</HeroContainer>
-			<TeamContainer>
-				{teamMembers.map((member, i) => renderTeamMemberCard(member, i))}
-			</TeamContainer>
-			<Footer>created by Brindashree C B - devChallenges.io</Footer>
-		</Container>
+		<>
+			<Nav />
+			<Container>
+				<HeroContainer>
+					<div>
+						<Title>The creative crew</Title>
+					</div>
+					<div>
+						<TagLine>Who we are</TagLine>
+						<Content>
+							We are team of creatively diverse. driven. innovative individuals
+							working in various locations from the world.
+						</Content>
+					</div>
+				</HeroContainer>
+				<TeamContainer>
+					{teamMembers.map((member, i) => renderTeamMemberCard(member, i))}
+				</TeamContainer>
+				<Footer>created by Brindashree C B - devChallenges.io</Footer>
+			</Container>
+		</>
 	);
 };
 

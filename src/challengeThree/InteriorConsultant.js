@@ -1,21 +1,21 @@
-//import { useState } from "react";
 import styled from "styled-components";
 import { colors } from "../themes/styles";
 import room from "../images/room.png";
 import designer from "../images/designer.png";
+import Nav from "../Nav/Nav";
 
 const Container = styled.div`
 	background-color: ${colors.primaryBlack};
 	color: ${colors.white};
 	margin: 0;
-	min-height: 100vh;
+	min-height: 110vh;
 	position: relative;
 	@media only screen and (max-width: 400px) {
 		width: 100%;
 		height: 100%;
 	}
 `;
-const Nav = styled.div`
+const NavContainer = styled.div`
 	display: flex;
 	justify-content: space-between;
 	padding: 2.5rem 5rem;
@@ -179,7 +179,8 @@ const Footer = styled.p`
 const InteriorConsultant = () => {
 	return (
 		<Container>
-			<Nav>
+			<Nav />
+			<NavContainer>
 				<Logo>This Interior</Logo>
 				<NavItemConatiner>
 					<NavItem active>Home</NavItem>
@@ -187,7 +188,7 @@ const InteriorConsultant = () => {
 					<NavItem>About</NavItem>
 					<NavItem>Contact</NavItem>
 				</NavItemConatiner>
-			</Nav>
+			</NavContainer>
 			<Content>
 				<Company>
 					<CompanyName>Modern interior</CompanyName>
