@@ -5,4 +5,6 @@ export const colors = {
 	footerGray: "#A9A9A9",
 	primaryBlack: "#181719",
 	primaryGray: "#828282",
+	gray4: "#bdbdbd",
+	orange: "#f2994a",
 };

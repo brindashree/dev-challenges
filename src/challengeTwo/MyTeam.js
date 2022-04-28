@@ -96,7 +96,7 @@ const TeamContainer = styled.div`
 const ImageAndProffession = styled.div`
 	display: flex;
 `;
-const Footer = styled.p`
+export const Footer = styled.p`
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
 	font-size: 0.875rem;
