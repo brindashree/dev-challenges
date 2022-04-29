@@ -29,7 +29,7 @@ const Nav = () => {
 			<Link to="/">Not Found</Link>
 			<Link to="/interior-consult">Interior Consult</Link>
 			<Link to="/recipe-blog">Recipe Blog</Link>
-			<Link to="my-gallery">My Gallery</Link>
+			<Link to="/my-gallery">My Gallery</Link>
 		</NavConatiner>
 	);
 };
