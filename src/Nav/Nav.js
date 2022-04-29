@@ -17,7 +17,7 @@ const NavConatiner = styled.div`
 		background-color: #1e293b;
 		border-radius: 5px;
 	}
-	@media only screen and (max-width: 400px) {
+	@media only screen and (max-width: 600px) {
 		display: none;
 	}
 `;
@@ -29,6 +29,7 @@ const Nav = () => {
 			<Link to="/">Not Found</Link>
 			<Link to="/interior-consult">Interior Consult</Link>
 			<Link to="/recipe-blog">Recipe Blog</Link>
+			<Link to="my-gallery">My Gallery</Link>
 		</NavConatiner>
 	);
 };
