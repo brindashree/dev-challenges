@@ -7,4 +7,6 @@ export const colors = {
 	primaryGray: "#828282",
 	gray4: "#bdbdbd",
 	orange: "#f2994a",
+	darkgray: "#4E5150",
+	lightGray: "#E5E5E5",
 };
