@@ -9,4 +9,5 @@ export const colors = {
 	orange: "#f2994a",
 	darkgray: "#4E5150",
 	lightGray: "#E5E5E5",
+	checkoutGray: "#4E5150",
 };
