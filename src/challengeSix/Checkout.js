@@ -246,14 +246,14 @@ const Checkout = () => {
 								<StyledLabel>Country</StyledLabel>
 								<FormItem>
 									<MaterialIcon icon="public" />
-									<StyledInput type="text" placeholder="Your address.." />
+									<StyledInput type="text" placeholder="Your country.." />
 								</FormItem>
 							</div>
 							<div>
 								<StyledLabel>Postal Code</StyledLabel>
 								<FormItem>
 									<MaterialIcon icon="markunread_mailbox" />
-									<StyledInput type="text" placeholder="Your city.." />
+									<StyledInput type="text" placeholder="Your postal code.." />
 								</FormItem>
 							</div>
 						</FlexDiv>
