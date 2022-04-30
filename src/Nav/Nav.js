@@ -31,6 +31,7 @@ const Nav = () => {
 			<Link to="/recipe-blog">Recipe Blog</Link>
 			<Link to="/my-gallery">My Gallery</Link>
 			<Link to="/checkout">Checkout Page</Link>
+			<Link to="/home">Edie Home Page</Link>
 		</NavConatiner>
 	);
 };
