@@ -16,6 +16,9 @@ import FeatherIcon from "feather-icons-react";
 const MainContainer = styled.div`
 	background-color: ${colors.white};
 	padding: 2rem;
+	@media only screen and (max-width: 600px) {
+		padding: 1rem;
+	}
 `;
 const NavBar = styled.div`
 	display: flex;
@@ -28,6 +31,9 @@ const Logo = styled.p`
 	margin: 0;
 	align-self: center;
 	color: #333333;
+	@media only screen and (max-width: 600px) {
+		font-size: 1.5rem;
+	}
 `;
 const NavLinks = styled.div`
 	display: flex;
@@ -38,6 +44,9 @@ const NavLinks = styled.div`
 		font-size: 1.5rem;
 		font-weight: 500;
 		color: #333333;
+	}
+	@media only screen and (max-width: 600px) {
+		display: none;
 	}
 `;
 const StyledP = styled.p`
@@ -65,6 +74,10 @@ const ImageContainer = styled.div`
 		height: 100%;
 		border-radius: 18px;
 	}
+	@media only screen and (max-width: 600px) {
+		width: inherit;
+		height: 9rem;
+	}
 `;
 const CustomImageContainer = styled.div`
 	${(props) => props?.width && `width: ${props.width}`};
@@ -74,6 +87,10 @@ const CustomImageContainer = styled.div`
 		width: inherit;
 		height: inherit;
 		${(props) => props?.borderRadius && `border-radius: ${props.borderRadius}`};
+	}
+	@media only screen and (max-width: 600px) {
+		${(props) => props?.mwidth && `width: ${props.mwidth}`};
+		${(props) => props?.mheight && `width: ${props.mheight}`};
 	}
 `;
 const FormItem = styled.div`
@@ -135,12 +152,22 @@ const StyledButton = styled.button`
 	${(props) => props?.color && `color: ${props.color}`};
 	${(props) => props?.fontSize && `font-size: ${props.fontSize}`};
 	${(props) => props?.floatRight && `float: right;`}
+	@media only screen and (max-width: 600px) {
+		padding: 0.5rem 1rem;
+		font-size: 14px;
+	}
 `;
 const MainContent = styled.div`
 	margin: 0 10rem;
+	@media only screen and (max-width: 600px) {
+		margin: 0;
+	}
 `;
 const CardContainer = styled.div`
 	display: flex;
+	@media only screen and (max-width: 600px) {
+		flex-direction: column;
+	}
 `;
 const Card = styled.div`
 	flex-grow: 1;
@@ -166,6 +193,9 @@ const Icon = styled.div`
 const GridContainer = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	@media only screen and (max-width: 600px) {
+		grid-template-columns: 1fr;
+	}
 `;
 const GridItem = styled.div`
 	img {
@@ -175,6 +205,15 @@ const GridItem = styled.div`
 	}
 	&:nth-of-type(2n-1) {
 		margin-top: 6.5rem;
+	}
+	@media only screen and (max-width: 600px) {
+		img {
+			width: 100%;
+			height: 21rem;
+		}
+		&:nth-of-type(2n-1) {
+			margin-top: unset;
+		}
 	}
 `;
 const ProfileCard = styled.div`
@@ -192,6 +231,11 @@ const Footer = styled.div`
 	color: white;
 	justify-content: space-evenly;
 	margin-top: 12.6rem;
+	@media only screen and (max-width: 600px) {
+		flex-direction: column;
+		padding: 2rem;
+		gap: 2rem;
+	}
 `;
 const Credit = styled.p`
 	font-family: "Montserrat", sans-serif;
@@ -202,6 +246,9 @@ const Credit = styled.p`
 	text-align: center;
 	margin: 0;
 	padding: 1rem;
+	@media only screen and (max-width: 600px) {
+		padding-top: 9.6rem;
+	}
 `;
 const Icons = styled.div`
 	display: flex;
@@ -209,6 +256,9 @@ const Icons = styled.div`
 `;
 const TeamContainer = styled.div`
 	display: flex;
+	@media only screen and (max-width: 600px) {
+		flex-direction: column;
+	}
 `;
 const TeamImages = styled.div`
 	display: flex;
@@ -222,7 +272,7 @@ const TeamDetail = styled.div`
 `;
 const HomePage = () => {
 	return (
-		<>
+		<div>
 			<Nav />
 			<MainContainer>
 				<NavBar>
@@ -236,7 +286,12 @@ const HomePage = () => {
 					</NavLinks>
 				</NavBar>
 				<HeroContainer>
-					<StyledP fontSize="1.125rem" color="#2D9CDB" fontWeight="500">
+					<StyledP
+						fontSize="1.125rem"
+						color="#2D9CDB"
+						fontWeight="500"
+						mobileFontSize="12px"
+					>
 						Unhappy with your website?
 					</StyledP>
 					<StyledP
@@ -245,6 +300,7 @@ const HomePage = () => {
 						margin="0rem"
 						maxWidth="34rem"
 						fontWeight="500"
+						mobileFontSize="24px"
 					>
 						We create beautiful and fast web services
 					</StyledP>
@@ -258,6 +314,7 @@ const HomePage = () => {
 						color="#333333"
 						fontWeight="500"
 						maxWidth="23rem"
+						mobileFontSize="24px"
 					>
 						Story, emotion and purpose
 					</StyledP>
@@ -267,6 +324,7 @@ const HomePage = () => {
 						margin="0rem"
 						maxWidth="23rem"
 						fontWeight="400"
+						mobileFontSize="12px"
 					>
 						We help transform your ideas into real world applications that will
 						outperform your toughest competition and help you achieve your
@@ -298,6 +356,7 @@ const HomePage = () => {
 						margin="13rem 0 1rem 0"
 						fontWeight="500"
 						maxWidth="21.625rem"
+						mobileFontSize="24px"
 					>
 						We offer high demand services
 					</StyledP>
@@ -306,7 +365,12 @@ const HomePage = () => {
 							<Icon backgroundColor="#2D9CDB">
 								<MaterialIcon icon="edit" />
 							</Icon>
-							<StyledP fontSize="1.5rem" color="#333333" fontWeight="700">
+							<StyledP
+								fontSize="1.5rem"
+								color="#333333"
+								fontWeight="700"
+								mobileFontSize="24px"
+							>
 								UI/UX Design
 							</StyledP>
 							<StyledP fontSize="1rem" color="#4F4F4F" fontWeight="400">
@@ -366,6 +430,7 @@ const HomePage = () => {
 						fontWeight="500"
 						maxWidth="28rem"
 						margin="12rem 0 1rem 0"
+						mobileFontSize="24px"
 					>
 						Good design means good business
 					</StyledP>
@@ -482,6 +547,8 @@ const HomePage = () => {
 									height="20rem"
 									borderRadius="24px"
 									marginTop="8rem"
+									mwidth="11.125rem"
+									mheight="11.125rem"
 								>
 									<img src={person3} alt="person1" />
 								</CustomImageContainer>
@@ -491,6 +558,8 @@ const HomePage = () => {
 									width="16.25rem"
 									height="16.25rem"
 									borderRadius="24px"
+									mwidth="9rem"
+									mheight="9rem"
 								>
 									<img src={person1} alt="person1" />
 								</CustomImageContainer>
@@ -499,6 +568,8 @@ const HomePage = () => {
 									height="18.75rem"
 									borderRadius="24px"
 									marginTop="1rem"
+									mwidth="10.125rem"
+									mheight="10.4rem"
 								>
 									<img src={person2} alt="person1" />
 								</CustomImageContainer>
@@ -511,6 +582,7 @@ const HomePage = () => {
 						fontWeight="500"
 						maxWidth="58.5rem"
 						margin="12.25rem 0 1rem 0"
+						mobileFontSize="24px"
 					>
 						“Fast and outstanding results. Edie understands their customer’s
 						needs. They have a young and talented team.”
@@ -523,6 +595,7 @@ const HomePage = () => {
 								color="#333333"
 								fontWeight="500"
 								margin="0.5rem 0"
+								mobileFontSize="24px"
 							>
 								Carlos Tran
 							</StyledP>
@@ -531,6 +604,7 @@ const HomePage = () => {
 								color="#828282"
 								fontWeight="500"
 								margin="0.5rem 0"
+								mobileFontSize="18px"
 							>
 								The Decorate Gatsby
 							</StyledP>
@@ -585,7 +659,7 @@ const HomePage = () => {
 				</div>
 			</Footer>
 			<Credit>created by Brindashree C B - devChallenges.io</Credit>
-		</>
+		</div>
 	);
 };
 
