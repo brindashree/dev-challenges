@@ -6,6 +6,7 @@ import RecipeBlog from "./challengeFour/RecipeBlog";
 import MyGallery from "./challengeFive/MyGallery";
 import Checkout from "./challengeSix/Checkout";
 import HomePage from "./challengeSeven/HomePage";
+import Portfolio from "./challengeEight/Portfolio";
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 			<Route path="/my-gallery" exact element={<MyGallery />} />
 			<Route path="/checkout" exact element={<Checkout />} />
 			<Route path="/home" exact element={<HomePage />} />
+			<Route path="/portfolio" exact element={<Portfolio />} />
 		</Routes>
 	);
 }

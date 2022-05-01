@@ -32,6 +32,7 @@ const Nav = () => {
 			<Link to="/my-gallery">My Gallery</Link>
 			<Link to="/checkout">Checkout Page</Link>
 			<Link to="/home">Edie Home Page</Link>
+			<Link to="/portfolio">Portfolio</Link>
 		</NavConatiner>
 	);
 };
