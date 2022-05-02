@@ -18,7 +18,9 @@ const NavConatiner = styled.div`
 		border-radius: 5px;
 	}
 	@media only screen and (max-width: 600px) {
-		display: none;
+		flex-direction: column;
+		gap: 1rem;
+		text-align: center;
 	}
 `;
 
