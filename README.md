@@ -1,4 +1,4 @@
-# Dev Challenges
+# Dev Challenges - Responsive Web Developer Challenges
 
 This repository containes solution of challenges hosted [devChallenges](https://devchallenges.io/).
 
