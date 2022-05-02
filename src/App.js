@@ -11,13 +11,13 @@ import Portfolio from "./challengeEight/Portfolio";
 function App() {
 	return (
 		<Routes>
-			<Route path="/" exact element={<NotFound />} />
+			<Route path="/not-found" exact element={<NotFound />} />
 			<Route path="/my-team" exact element={<MyTeam />} />
 			<Route path="/interior-consult" exact element={<InteriorConsultant />} />
 			<Route path="/recipe-blog" exact element={<RecipeBlog />} />
 			<Route path="/my-gallery" exact element={<MyGallery />} />
 			<Route path="/checkout" exact element={<Checkout />} />
-			<Route path="/home" exact element={<HomePage />} />
+			<Route path="/" exact element={<HomePage />} />
 			<Route path="/portfolio" exact element={<Portfolio />} />
 		</Routes>
 	);
