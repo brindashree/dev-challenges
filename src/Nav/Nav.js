@@ -28,12 +28,12 @@ const Nav = () => {
 	return (
 		<NavConatiner>
 			<Link to="/my-team">My Team</Link>
-			<Link to="/">Not Found</Link>
+			<Link to="/not-found">Not Found</Link>
 			<Link to="/interior-consult">Interior Consult</Link>
 			<Link to="/recipe-blog">Recipe Blog</Link>
 			<Link to="/my-gallery">My Gallery</Link>
 			<Link to="/checkout">Checkout Page</Link>
-			<Link to="/home">Edie Home Page</Link>
+			<Link to="/">Edie Home Page</Link>
 			<Link to="/portfolio">Portfolio</Link>
 		</NavConatiner>
 	);

@@ -11,7 +11,7 @@ import { colors } from "../themes/styles";
 const Container = styled.div`
 	width: 60rem;
 	margin: 0 auto;
-	@media only screen and (max-width: 400px) {
+	@media only screen and (max-width: 600px) {
 		width: 100%;
 	}
 `;
@@ -20,7 +20,7 @@ const HeroContainer = styled.div`
 	div {
 		width: 50%;
 	}
-	@media only screen and (max-width: 400px) {
+	@media only screen and (max-width: 600px) {
 		display: flex;
 		flex-direction: column;
 		div {
@@ -49,7 +49,7 @@ const MemberCard = styled.div`
 	&:nth-child(3n-1) {
 		margin-top: 3rem;
 	}
-	@media only screen and (max-width: 400px) {
+	@media only screen and (max-width: 600px) {
 		max-width: 50%;
 		&:nth-child(3n-1) {
 			margin-top: 0;
@@ -71,14 +71,14 @@ const MemberProfession = styled.p`
 	font-family: "PT Serif", serif;
 	transform: rotate(90deg);
 	margin-top: 3rem;
-	@media only screen and (max-width: 400px) {
+	@media only screen and (max-width: 600px) {
 		margin-top: 0rem;
 	}
 `;
 const Image = styled.img`
 	width: 12.5rem;
 	height: 18.75rem;
-	@media only screen and (max-width: 400px) {
+	@media only screen and (max-width: 600px) {
 		width: 8.625rem;
 		height: 16.337rem;
 	}
@@ -88,7 +88,7 @@ const TeamContainer = styled.div`
 	grid-template-rows: 1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
 	margin: 3rem 0 3rem 0;
-	@media only screen and (max-width: 400px) {
+	@media only screen and (max-width: 600px) {
 		grid-template-rows: 1fr 1fr 1fr;
 		grid-template-columns: 1fr 1fr;
 	}
