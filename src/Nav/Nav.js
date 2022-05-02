@@ -18,7 +18,9 @@ const NavConatiner = styled.div`
 		border-radius: 5px;
 	}
 	@media only screen and (max-width: 600px) {
-		display: none;
+		flex-direction: column;
+		gap: 1rem;
+		text-align: center;
 	}
 `;
 
@@ -32,6 +34,7 @@ const Nav = () => {
 			<Link to="/my-gallery">My Gallery</Link>
 			<Link to="/checkout">Checkout Page</Link>
 			<Link to="/home">Edie Home Page</Link>
+			<Link to="/portfolio">Portfolio</Link>
 		</NavConatiner>
 	);
 };
